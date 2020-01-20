@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,11 +9,14 @@
             background-color: lightblue;
         }
     </style>
-{% block extra_head %} {% endblock %}
+{% block extra_head %}
+    <link rel="stylesheet" href="{% static "main.css" %}"/>
+ {% endblock %}
 </head>
 <body>
 <h1>Ask Company</h1>
 {% block content %}
+    <script src="{% static "main.js" %}"></script>
 {% endblock %}
 <hr/>
 &copy; 2020. Nam_Minjeong.
