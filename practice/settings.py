@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'debug_toolbar',
     'django.contrib.humanize',
     'shop',
+    'common',
     'blog',
 ]
 
