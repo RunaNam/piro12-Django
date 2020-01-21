@@ -6,7 +6,7 @@
     </form>
     {% for item in item_list %}
     <div>
-        <a href="/shop/{{ item.pk }}/">
+        <a href="{{ item.get_absolute_url }}">
             {{item.name}}
         </a>
         가격: {{item.price}}
